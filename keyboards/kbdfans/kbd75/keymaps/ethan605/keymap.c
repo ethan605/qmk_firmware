@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-#include QMK_KEYBOARD_H
-
-#define _______ KC_TRNS
-=======
 /* Copyright 2020 @ethan605
  *
  * This program is free software: you can redistribute it and/or modify
@@ -20,7 +15,6 @@
  */
 
 #include QMK_KEYBOARD_H
->>>>>>> 5ecb1b2d39f5424979a1325e2642ac73db828c03
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   /* 0: Qwerty layer
@@ -71,15 +65,3 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______,  _______,  _______,                      _______,  _______,  _______,                      _______,  _______,  _______,  _______,  _______,  _______
   ),
 };
-<<<<<<< HEAD
-
-void led_set_user(uint8_t usb_led) {
-    if (usb_led & (1 << USB_LED_CAPS_LOCK)) {
-        DDRB |= (1 << 2); PORTB &= ~(1 << 2);
-    } else {
-        DDRB &= ~(1 << 2); PORTB &= ~(1 << 2);
-    }
-}
-
-=======
->>>>>>> 5ecb1b2d39f5424979a1325e2642ac73db828c03
